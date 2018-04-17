@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>animation</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+            <style>
+                .navbar-custom {
+                    background-color: #282e3e;
+                    color: #FFFFFF;
+                    border-radius: 0px;
+                    padding: 10px;
+                }
+                .navbar-custom .navbar-nav>li>a{
+                    color: #FFFFFF;
+                    font-size: 19px;
+                    margin-left: 12px;
+                }
+                .navbar-custom .navbar-nav>.active>a{
+                    color: #FFFFFF;
+                    background-color: #82c434;
+                }
+                .navbar-custom .navbar-nav>li>a:hover{
+                    background-color:#82c434 ;
+                }
+                .navbar-custom .navbar-brand {
+                    color: #FFFFFF;
+                    font-size: 27px;
+                    margin-left: 15px;
+                }
+                .navbar-custom .navbar-brand:hover {
+                    color: #FFFFFF;
+                    font-size: 27px;
+                }
+                .slider{
+                    width: 100%;
+                    margin-top: -20px;
+                    padding: 0px;
+                }
+                .item{
+                    height: 500px;
+                }
+
+                b{
+                    font-size: 40px;
+                    border-bottom-style: ridge;
+                    font-weight: bold;
+                    border-bottom-color: black;
+                }
+                .service {
+
+                    font-size: 45px;
+                    border-bottom-style: ridge;
+                    font-weight: bold;
+                    border-bottom-color: black;
+                }
+                .col1{
+                    border-style: solid;
+                    border-color: darkgreen;
+                    border-width: 1px;
+                    min-height: 350px;
+                }
+                .icons {
+                    width: 100px;
+                    font-size: 60px;
+                    background-color: #82c434;
+                    padding: 5px 10px;
+                    height: 80px;
+                    margin-top: -50px;
+                    margin-left: 65px;
+                    color: #5E4485;
+
+                }
+                .btn-primary{
+                    background-color: #82c434;
+                    border-radius: 0px;
+                    border-color: #82c434;
+                    margin-left: 80px;
+                }
+                #about{
+                    width: 100%;
+                    min-height: 500px;
+                    background-color: #282e3e;
+                    margin-top: 50px;
+                }
+                .aboutcom{
+                    font-size: 45px;
+                    border-bottom-style: ridge;
+                    font-weight: bold;
+                    border-bottom-color: #82c434;
+                    position: relative;
+                    top: 35px;
+                    color: white;
+                }
+                #team{
+                    position: relative;
+                    top: 10px;
+                }
+                .ourteam{
+                    font-size: 45px;
+                    border-bottom-style: ridge;
+                    font-weight: bold;
+                    border-bottom-color: #82c434;
+                    position: relative;
+                    top: 35px;
+                    color: black;
+                }
+                .team-member{
+                    text-align: center;
+                    margin-top: 5px;
+                }
+                .progress {
+                    height: 35px;
+                    margin-right: 5px;
+
+                }
+                .progress .skill {
+                    font: normal 12px "Open Sans Web";
+                    line-height: 35px;
+                    padding: 0;
+                    margin: 0 0 0 20px;
+                    text-transform: uppercase;
+                }
+                .progress .skill .val {
+                    float: right;
+                    font-style: normal;
+                    margin: 0 20px 0 0;
+                }
+
+                .progress-bar {
+                    text-align: left;
+                    transition-duration: 3s;
+                }
+                .icon i{
+                    font-size: 20px;
+                    height: 50px;
+                    width: 50px;
+                    background-color: #98e698;
+                    padding: 18px;
+                    border-radius: 50%;
+                }
+                .icon i{
+                    background-color: #46d246;
+                }
+                #footer{
+                    width: 100%;
+                    min-height: 200px;
+                    background-color: #282e3e;
+                    position: relative;
+                    top: 50px;
+                }
+            </style>
+        </head>
+        <body>
+                <nav class="navbar navbar-custom navbar-default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                              <div class="navbar-header">
+                                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#robust">
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                  </button>
+                                  <a href="#" class="navbar-brand">Website Name</a>
+                              </div>
+                            </div>
+                            <div class="col-md-8">
+                                    <div class="collapse navbar-collapse" id="robust">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="#">Home</a> </li>
+                                            <li><a href="#">Technology</a> </li>
+                                            <li><a href="#">services</a> </li>
+                                            <li><a href="#">Blog</a> </li>
+                                            <li><a href="#">About Us</a> </li>
+                                            <li><a href="#">Contact us</a> </li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+              <!-- slider-->
+                <div class="slider">
+                    <div id="slider1" class="carousel-slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="https://farm5.staticflickr.com/4712/40538054981_76a6f38090_h.jpg" width="1600" height="1013" alt="Dusting At Dawn">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--services-->
+                <div class="container">
+                    <p  class="service text-center"><strong>Service</strong></p>
+                    <p style="text-align: center; font-size: 24px;">A computer is a device that can be instructed to carry out arbitrary sequences of arithmetic <br>or logical operations automatically.</p>
+                <br><br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="col1">
+                            <div class="icons" style="text-align: center"><i class="fa fa-laptop" ></i> </div>
+
+                            <strong><h2 style="font-size: 20px; text-align: center;"><b>Web Design</b></h2></strong>
+                            <p style="font-size: 20px; margin: 20px;  ">A computer is a device that can be instructed to carry out arbitrary sequences of arithmetic or logical operations automatically. The ability of computers to follow generalized sets of operations, called programs, enables them to perform an extremely wide range of tasks.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="col1">
+                            <div class="icons" style="text-align: center"><i class="fa fa-laptop" ></i> </div>
+
+                            <strong><h2 style="font-size: 20px; text-align: center;"><b>Web Design</b></h2></strong>
+                            <p style="font-size: 20px; margin: 20px;  ">A computer is a device that can be instructed to carry out arbitrary sequences of arithmetic or logical operations automatically. The ability of computers to follow generalized sets of operations, called programs, enables them to perform an extremely wide range of tasks.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="col1">
+                            <div class="icons" style="text-align: center"><i class="fa fa-mobile" ></i> </div>
+
+                            <strong><h2 style="font-size: 20px; text-align: center;"><b>Web Design</b></h2></strong>
+                            <p style="font-size: 20px; margin: 20px;  ">A computer is a device that can be instructed to carry out arbitrary sequences of arithmetic or logical operations automatically. The ability of computers to follow generalized sets of operations, called programs, enables them to perform an extremely wide range of tasks.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="col1">
+
+                            <div class="icons" style="text-align: center"><i class="fa fa-mobile" ></i> </div>
+
+                            <strong><h2 style="font-size: 20px; text-align: center;"><b>Web Design</b></h2></strong>
+                            <p style="font-size: 20px; margin: 20px;  ">A computer is a device that can be instructed to carry out arbitrary sequences of arithmetic or logical operations automatically. The ability of computers to follow generalized sets of operations, called programs, enables them to perform an extremely wide range of tasks.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+
+
+                    </div>
+                 </div>
+                    <div id="about">
+
+                            <p  class="aboutcom text-center" ><strong>About Company</strong></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="images/Paper-iPad-App-1.jpg" class="img-responsive" style=" margin-top: 30px; ">
+                            </div>
+                                <div class="col-md-6">
+                                    <p style="color: white;margin-top: 30px;">Learn more about who Microsoft is and what we do. Find all of the Microsoft company information and data you need. </p>
+                                    <p style="color: white;">Armasight is a leading US-based provider of cutting-edge Night Vision and advanced Thermal Imaging Solutions, top-quality Direct View Binoculars</p>
+
+                                         <a href="http://gridgum.com/author/agez" target="_blank"></a>
+                                        <!-- Skill Bars -->
+                                            <h4 style="color: #82c434">HTML</h4>
+                                        <div class="progress skill-bar ">
+
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="skill"><i class="val">100%</i></span>
+                                            </div>
+                                        </div>
+                                            <h4 style="color: darkturquoise">CSS</h4>
+                                        <div class="progress skill-bar">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" >
+                                                <span class="skill"><i class="val">90%</i></span>
+                                            </div>
+                                        </div>
+                                            <h4 style="color: orange">JavaScript</h4>
+                                        <div class="progress skill-bar">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="skill"><i class="val">75%</i></span>
+                                            </div>
+                                        </div>
+                                            <h4 style="color: #c01918">Photoshop</h4>
+                                        <div class="progress skill-bar">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="skill"><i class="val">55%</i></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div id="team">
+                    <div class="container">
+                        <div class="row">
+                            <p  class="ourteam text-center" ><strong>Our Team</strong></p>
+                            <div class="col-md-3">
+                                <div class="team-member">
+                                    <img src="images/profile.png" class="img-responsive" style="height: 200px; margin-top: 40px">
+                                    <h3>Hardika Patel</h3>
+                                    <strong>Web Designer</strong>
+                                    <p>Always begin with your very best experiences and achievements and make these a particular focus.</p>
+
+                                    <a href=" " class="icon" ><i class="fa fa-facebook"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-google-plus"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-twitter"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-whatsapp"></i> </a>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-member">
+                                    <img src="images/profile.png" class="img-responsive" style="height: 200px; margin-top: 40px">
+                                    <h3>Hardika Patel</h3>
+                                    <strong>Web Designer</strong>
+                                    <p>Always begin with your very best experiences and achievements and make these a particular focus.</p>
+
+                                    <a href=" " class="icon" ><i class="fa fa-facebook"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-google-plus"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-twitter"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-whatsapp"></i> </a>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-member">
+                                    <img src="images/profile.png" class="img-responsive" style="height: 200px; margin-top: 40px">
+                                    <h3>Hardika Patel</h3>
+                                    <strong>Web Designer</strong>
+                                    <p>Always begin with your very best experiences and achievements and make these a particular focus.</p>
+
+                                    <a href=" " class="icon" ><i class="fa fa-facebook"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-google-plus"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-twitter"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-whatsapp"></i> </a>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="team-member">
+                                    <img src="images/profile.png" class="img-responsive" style="height: 200px; margin-top: 40px">
+                                    <h3>Hardika Patel</h3>
+                                    <strong>Web Designer</strong>
+                                    <p>Always begin with your very best experiences and achievements and make these a particular focus.</p>
+
+                                    <a href=" " class="icon" ><i class="fa fa-facebook"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-google-plus"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-twitter"></i> </a>
+                                    <a href=" " class="icon"><i class="fa fa-whatsapp"></i> </a>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <br>
+                                <h2 style="color: #FFFFFF;">About Us</h2><br><br>
+                                    <p style="color: #FFFFFF; margin-top: -20px; ">A website is a collection of related web pages, including multimedia content, typically
+                                        identified with a common domain name, and published on at least one web server.
+                                        Some of the pages on your website are more important than others. Okay, many of you probably find that fairly obvious.
+                                    </p>
+                            </div>
+                            <div class="col-md-4">
+                                <br>
+                                <h2 style="color: #FFFFFF;">Services</h2><br><br>
+                                <p style="color: #FFFFFF;margin-top: -20px;">A website is a collection of related web pages, including multimedia content, typically
+                                    identified with a common domain name, and published on at least one web server.
+                                    Some of the pages on your website are more important than others. Okay, many of you probably find that fairly obvious.
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <br><br>
+                            <h2 style="color: #FFFFFF;margin-top: -5px">Contact details</h2><br>
+                            <p style="color: #FFFFFF;"><strong>Address:</strong>Ben's Auto Body Inc
+
+                                Ben's Auto Body Inc
+
+                                11 Mirona Rd
+
+                                Portsmouth, NH 03801</p>
+                            <p style="color: #FFFFFF;"><strong>Email:</strong>hardikapatel8@gmail.com</p>
+                            <p style="color: #FFFFFF;"><strong>Phone:</strong>+1 954-654-6858</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <script>
+                $(document).ready(function() {
+                    $('.progress .progress-bar').css("width",
+                        function() {
+                            return $(this).attr("aria-valuenow") + "%";
+                        }
+                    )
+                });
+
+            </script>
+
+    </body>
+</html>

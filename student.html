@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<style>
+
+body {
+    background-image: url("images/mountains.png");
+
+}
+span{
+	color:red;
+	}
+table{
+		text-align:center;
+		width:35%;
+	}
+</style>
+</head>
+<body>
+<header>
+	<h1 style="text-align:center; color: #FFFFFF;font-size: 35px; ">Student Registration Form</h1>
+	<hr>
+	<p style="color:red; text-align:right;">*=mandatory</p>
+</header>
+
+<form style="background-color:rgba(62,207,182,0.60); ">
+	<fieldset style="color:white; " >
+	<table>
+		<legend style="color:white; font-size:1.4em; text-align: center;"><b>Personal Information</b></legend>
+		<tr>
+		<th>First Name:<span>* </span> </th>
+		<td><input type="text" name="firstname" required></td>
+		</tr>
+		<tr>
+		<th>Middle Name:  </th>
+		<td><input type="text" name="middlename" ></td>
+		</tr>
+		<tr>
+		<th>Last Name: <span>* </span></th>
+		<td> <input type="text" name="lastname"  required></td>
+		</tr>
+		</table>
+	</fieldset>
+	<fieldset style="color:white; ">
+		<legend style="color:white; font-size:1.4em; text-align: center;"><b>Contact Information</b></legend>
+	<table>
+	<tr>
+	
+	<th>Date Of Birth:<span>* </span></th><td> <input type="date" name="bday" required></td>
+	</tr>
+	<tr>
+	<th>Mobile No:<span>* </span> </th><td><input type="tel" name="tel" maxlength="10"  pattern="[0-9]{10}" title="Enter your mobile number"
+												  required></td></tr>
+	<tr>
+	<th>Email Address: </th><td><input type="email" name="email"></td></tr>
+	</table>
+	</fieldset>
+	<fieldset style="color:white;">
+		<legend style="color:white; font-size:1.4em; text-align: center;"><b>Address Information</b></legend>
+	 <table>
+	<tr>
+		<td style="font-size: 16px;"><b>Address: </b>
+		</td>
+		<td><textarea name="message" rows="3" cols="20"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-size: 16px;"><b>City:</b></td>
+		<td><select name="city" >
+	<option value="Ohio">Ohio</option>
+	<option value="Miami">Miami</option>
+	<option value="Boston" selected>Boston</option>
+	<option value="Newyork">New york</option>
+	<option value="Los Angeles">Los Angeles</option>
+	</select>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-size: 16px;"><b>State:</b>
+		</td>
+		<td><input list="state" name="state">
+			<datalist id="state">
+			<option value="California">
+			<option value="New York">
+			<option value="Florida">
+			<option value="Cincinnati">
+		</datalist>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-size: 16px;"><b>Country</b>
+		</td>
+		<td><input list="country" name="country">
+		<datalist id="country">
+			<option value="India">
+			<option value="America">
+			<option value="China">
+			<option value="Bhutan">
+			<option value="Canada">
+		</datalist>
+		</td>
+	</tr>
+</table>
+	
+	</fieldset>
+	<fieldset style="color:white;" >
+		<legend style="color:white; font-size:1.4em; text-align: center;"><b>Extra Information</b></legend>
+	<table>
+	<tr>
+	<th>Gender:</th><td><input type="radio" name="gender" value="male" checked>Male
+			<input type="radio" name="gender" value="female">Female
+			<input type="radio" name="gender" value="other">Other</td>
+			</tr>
+			<tr>
+	<th>Occupation:</th><td><input type="checkbox" name="occupation" value="student">Student
+				<input type="checkbox" name="occupation" value="employee">Employee
+				<input type="checkbox" name="occupation" value="retired">Retired
+				<input type="checkbox" name="occupation" value="timepass">Timepass</td>
+				</tr>
+	</table>
+	</fieldset>
+	<input type="submit" value="Submit">
+	<input type="reset" value="Reset">
+</form>
+</body>
+</html>
